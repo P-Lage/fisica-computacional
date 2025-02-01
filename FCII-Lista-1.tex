@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{geometry}
+\usepackage{pgfplots} 
+\usepackage{filecontents}
+
+\begin{document}
+
+\section*{Lista de exercícios para a 1ª avaliação}
+
+\begin{enumerate}
+    \item 
+    \begin{enumerate}
+        \item Escreva um programa em C++ que solicite ao usuário o valor da velocidade inicial e do ângulo inicial, em relação à horizontal, de um movimento balístico, desprezando a resistência do ar, que retorne o valor da altura máxima atingida, o alcance horizontal e o tempo de movimento. 
+        \item Faça ainda com que o programa escreva os valores dos pares ordenados descrevendo a trajetória do objeto para um arquivo de dados.
+    \end{enumerate}
+
+    \item Escreva um programa em C++ para gerar uma PG com os valores do primeiro elemento, da razão e o número de elementos solicitados ao usuário. Faça com que o programa não apresente todos os valores da PG, mas somente aquele cujo índice é inserido pelo usuário, apresentando uma mensagem de erro caso o elemento não exista e saindo do programa caso o índice inserido seja 0.
+
+    \item Calcule a derivada numérica da função \( f(x) = e^{-x} \cos x \) pelos métodos da 
+    \begin{enumerate}
+        \item diferença finita progressiva e 
+        \item centrada solicitando ao usuário os valores de \( x_{\text{min}} \), \( x_{\text{max}} \) e \( h \). 
+        \item Faça o programa escrever os resultados para um arquivo de dados.
+    \end{enumerate}
+
+    \item Escreva um programa que calcule a integral 
+    \[
+    \int \frac{\sin x}{x + 0.1} \, dx
+    \]
+    pelo método de Simpson sendo o valor de \( N \) solicitado ao utilizador. Qual o valor de \( N \) requerido para que o resultado apresentado deixe de variar? [Dica: Execute o programa várias vezes com valores cada vez maiores de \( N \) e verifique quando o resultado deixa de variar.]
+
+    \item Um sistema físico é descrito pela função densidade de probabilidade
+    \[
+    f(x) = 4 \sqrt{\frac{5^3}{\pi}} x^2 \exp(-5x^2).
+    \]
+    \begin{enumerate}
+        \item Qual a probabilidade de se encontrar uma partícula do sistema com estados descritos no intervalo \([0.2, 0.5]\) ao utilizar-se o método de Simpson com \( N = 20 \)?
+        \item Utilize a derivação numérica e o método da bisseção para encontrar o valor de \( x \) para o qual o valor de \( f(x) \) é máximo.
+    \end{enumerate}
+
+    \item O monitoramento da velocidade de uma partícula movimentando-se em uma dimensão está disponível no arquivo de dados \textbf{vel.dat} (tempo dado em s e posição em mm). 
+    \begin{enumerate}
+        \item Escreva um programa que interpole estes pontos pelo método de Lagrange.
+        \item Encontre o momento em que o movimento muda de sentido.
+        \item Supondo que \( x_0 = 0 \), calcule o deslocamento da partícula nos 10 s.
+        \item Determine a posição em que a mudança de sentido ocorre.
+        \item Encontre o instante no qual \( x = 5 \) mm.
+    \end{enumerate}
+
+    \item A função seno pode ser obtida por meio da série:
+    \[
+    \sin x = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n+1)!} x^{2n+1}.
+    \]
+    \begin{enumerate}
+        \item Escreva um código no C++ que defina uma função por meio da série acima truncada em \( n_{\text{max}} = 10 \).
+        \item Gere, para um arquivo de dados, o conjunto com 500 pontos de pares ordenados descrevendo o erro \( \epsilon = |f(x) - \sin x| \), sendo \( f(x) \) a função definida no item (a), no intervalo \([0, 2\pi]\).
+        \item Escreva um código que defina a função com a série acima de modo que a soma seja truncada quando o módulo do último termo passar a ser menor que \( 10^{-6} \).
+        \item Gere novamente o conjunto de 500 pares ordenados no intervalo \([0, 2\pi]\) do erro definido no item (b) para um arquivo de dados. [Dica: o fatorial pode ser obtido a partir da relação \( \Gamma(n+1) = n! \), na qual \( \Gamma(x) \) é a função gama, definida na biblioteca \texttt{cmath} como \texttt{tgamma}.]
+    \end{enumerate}
+\end{enumerate}
+
+\end{document}
