@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Pedro/OneDrive/Documentos/Repositorios/fisica-computacional",
-      "program": "c:/Users/Pedro/OneDrive/Documentos/Repositorios/fisica-computacional/build/Debug/outDebug",
+      "cwd": "c:/Users/Pedro/OneDrive/Documentos/Repositorios/fisica-computacional/Resoluções-das-Listas",
+      "program": "c:/Users/Pedro/OneDrive/Documentos/Repositorios/fisica-computacional/Resoluções-das-Listas/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
