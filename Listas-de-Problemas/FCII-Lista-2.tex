@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{geometry}
+\usepackage{pgfplots} 
+\usepackage{filecontents}
+
+\begin{document}
+
+\section*{Lista de exercícios para a 2ª avaliação}
+
+\begin{enumerate}
+    \item Um objeto de 1 kg preso a uma mola de constante elástica $k = 0,5$ N/m sofre uma força de arrasto dada por $F_x = -bv_x$, sendo o coeficiente de arrasto $b = 0,1$ kg/s.
+    \begin{enumerate}
+        \item Utilize o método de Euler modificado para determinar $x(t)$ e $v(t)$ nos primeiros 50 s de movimento, com $x(0) = 1$ m, $v(0) = 0$ e $\Delta t = 0,01$ s.
+        \item Acrescente ao arquivo de dados a evolução da energia mecânica do sistema.
+        \item Escreva um novo código para os casos em que $x(0) = 0,5$ m e $v(0) = 2$ m/s.
+    \end{enumerate}
+    
+    \item Resolva o problema anterior utilizando o método de Runge-Kutta de 4ª ordem.
+    
+    \item Um bloco preso a uma mola ideal com $k = 10$ N/m tem $m = 0,2$ kg de massa. Entre o bloco e o piso, o coeficiente de atrito cinético é $\mu_k = 0,1$.
+    \begin{enumerate}
+        \item Gere, para um arquivo de dados, a posição e a velocidade do bloco nos primeiros 10 s se $x(0) = 1$ m e $v(0) = 0$ utilizando o método de Euler modificado.
+        \item Resolva pelo método de Runge-Kutta de 4ª ordem com $\Delta t = 0,01$ s.
+        \item Adicione ao arquivo de dados o comportamento da força à qual está sujeito o bloco no intervalo de tempo em questão.
+    \end{enumerate}
+    
+    \item Resolva o problema do pêndulo simples pelo método de Runge-Kutta adaptativo com $L = 1$ m, $m = 1$ kg, $g = 9,8$ m/s², $\theta(0) = 3$ rad e $\omega(0) = 0$.
+    \begin{enumerate}
+        \item Adicione ao arquivo de dados o erro estimado a partir do cálculo da energia mecânica do sistema e como o valor de $\Delta t$ varia.
+        \item Compare o erro com o mesmo obtido pelo método de Runge-Kutta de 4ª ordem com $\Delta t = 0,01$.
+    \end{enumerate}
+    
+    \item A força de arrasto do ar pode ser expressa por $F_a = C \rho A v^2 /2$, onde $C$ é o coeficiente de arrasto, $\rho$ a densidade do ar e $A$ a área da seção reta do objeto.
+    \begin{enumerate}
+        \item Escreva um programa que salve os valores da altura e da velocidade de um objeto lançado do solo com $v_y(0) = 10$ m/s no intervalo de 2 s utilizando o método de Euler modificado com $\Delta t = 0,01$ s.
+        \item Compare graficamente o resultado numérico, tanto para a posição quanto para a velocidade, com o mesmo movimento desconsiderando a resistência do ar.
+    \end{enumerate}
+    
+    \item Resolva o problema anterior usando os métodos:
+    \begin{enumerate}
+        \item Runge-Kutta de 4ª ordem.
+        \item Runge-Kutta adaptativo com tolerância de $\epsilon = 10^{-10}$.
+    \end{enumerate}
+    
+    \item Resolva o problema da difusão térmica em uma haste isolada de $L = 10$ cm com uma difusividade térmica de $D = 5 \times 10^{-5}$ m²/s.
+    \begin{enumerate}
+        \item Considere os casos em que $T_0 = T_N = 0$ °C e $T_0 = 0$ °C, $T_N = 100$ °C.
+        \item Considere $t_{\max} = 40$ s, $N = 30$ e $\Delta t = 2 \times 10^{-2}$ s.
+        \item Gere o perfil final de temperatura e compare graficamente com o perfil esperado para $t \to \infty$.
+    \end{enumerate}
+\end{enumerate}
+
+\end{document}
