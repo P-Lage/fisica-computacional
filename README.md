@@ -71,4 +71,3 @@ Se você tiver dúvidas, sugestões ou quiser discutir algum problema de física
 ---
 
 Espero que este repositório seja útil para você!
-```
